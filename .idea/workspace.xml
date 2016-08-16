@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="462012e7-6f4c-4e37-b85a-45d616a36cfd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/5.mixins.parametric.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/6.mixins.parametric.default.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/8.mixins.parametric.match.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/9.mixins.parametric.function.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/build/0.mixins.simple.css" afterPath="$PROJECT_DIR$/main/build/0.mixins.simple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/build/1.mixins.define.css" afterPath="$PROJECT_DIR$/main/build/1.mixins.define.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/build/2.mixins.pseudo.css" afterPath="$PROJECT_DIR$/main/build/2.mixins.pseudo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/build/3.mixins.namespace.css" afterPath="$PROJECT_DIR$/main/build/3.mixins.namespace.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/build/4.mixins.important.css" afterPath="$PROJECT_DIR$/main/build/4.mixins.important.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/0.mixins.simple.less" afterPath="$PROJECT_DIR$/main/src/0.mixins.simple.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/1.mixins.define.less" afterPath="$PROJECT_DIR$/main/src/1.mixins.define.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/2.mixins.pseudo.less" afterPath="$PROJECT_DIR$/main/src/2.mixins.pseudo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/3.mixins.namespace.less" afterPath="$PROJECT_DIR$/main/src/3.mixins.namespace.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/4.mixins.important.less" afterPath="$PROJECT_DIR$/main/src/4.mixins.important.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less" afterPath="$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less" />
     </list>
     <ignored path="less-grope.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,128 +25,60 @@
     <favorites_list name="less-grope" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.44109398">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="4.mixins.important.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/build/4.mixins.important.css">
+          <file leaf-file-name="8.mixins.parametric.match.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main/src/8.mixins.parametric.match.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
-                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="5.mixins.parametric.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/src/5.mixins.parametric.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+                <state relative-caret-position="392">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
-                    <element signature="e#22#347#0" expanded="false" />
-                    <element signature="e#47#95#0" expanded="false" />
-                    <element signature="e#117#165#0" expanded="false" />
-                    <element signature="e#200#256#0" expanded="false" />
-                    <element signature="e#214#252#0" expanded="false" />
-                    <element signature="e#288#345#0" expanded="false" />
-                    <element signature="e#303#341#0" expanded="false" />
+                    <element signature="e#328#351#0" expanded="false" />
+                    <element signature="e#387#447#0" expanded="false" />
+                    <element signature="e#518#571#0" expanded="false" />
+                    <element signature="e#624#679#0" expanded="false" />
+                    <element signature="e#733#787#0" expanded="false" />
+                    <element signature="e#813#844#0" expanded="false" />
+                    <element signature="e#871#907#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="0.mixins.simple.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/src/0.mixins.simple.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="4.mixins.important.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/src/4.mixins.important.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="5.mixins.parametric.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/build/5.mixins.parametric.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="6.mixins.parametric.default.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/src/6.mixins.parametric.default.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#22#377#0" expanded="false" />
-                    <element signature="e#55#103#0" expanded="false" />
-                    <element signature="e#133#181#0" expanded="false" />
-                    <element signature="e#223#279#0" expanded="false" />
-                    <element signature="e#237#275#0" expanded="false" />
-                    <element signature="e#318#375#0" expanded="false" />
-                    <element signature="e#333#371#0" expanded="false" />
-                    <element signature="e#393#469#0" expanded="false" />
-                    <element signature="e#482#551#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="6.mixins.parametric.default.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main/build/6.mixins.parametric.default.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="7.mixins.parametric.multiple.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="7.mixins.parametric.multiple.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+                <state relative-caret-position="560">
+                  <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                   <folding>
-                    <element signature="e#240#264#0" expanded="false" />
-                    <element signature="e#310#339#0" expanded="false" />
-                    <element signature="e#401#429#0" expanded="false" />
-                    <element signature="e#489#559#0" expanded="false" />
-                    <element signature="e#646#747#0" expanded="false" />
-                    <element signature="e#813#914#0" expanded="false" />
-                    <element signature="e#1195#1226#0" expanded="false" />
-                    <element signature="e#1251#1287#0" expanded="false" />
-                    <element signature="e#1309#1354#0" expanded="false" />
-                    <element signature="e#1373#1443#0" expanded="false" />
-                    <element signature="e#1481#1543#0" expanded="false" />
-                    <element signature="e#1578#1637#0" expanded="false" />
-                    <element signature="e#1658#1715#0" expanded="false" />
-                    <element signature="e#1735#1792#0" expanded="false" />
+                    <element signature="e#237#261#0" expanded="false" />
+                    <element signature="e#304#333#0" expanded="false" />
+                    <element signature="e#393#421#0" expanded="false" />
+                    <element signature="e#478#548#0" expanded="false" />
+                    <element signature="e#632#733#0" expanded="false" />
+                    <element signature="e#796#897#0" expanded="false" />
+                    <element signature="e#962#1033#0" expanded="false" />
+                    <element signature="e#1082#1150#0" expanded="false" />
+                    <element signature="e#1175#1206#0" expanded="false" />
+                    <element signature="e#1231#1267#0" expanded="false" />
+                    <element signature="e#1289#1334#0" expanded="false" />
+                    <element signature="e#1353#1423#0" expanded="false" />
+                    <element signature="e#1461#1523#0" expanded="false" />
+                    <element signature="e#1558#1617#0" expanded="false" />
+                    <element signature="e#1638#1695#0" expanded="false" />
+                    <element signature="e#1715#1772#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="9.mixins.parametric.function.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main/src/9.mixins.parametric.function.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -166,24 +87,32 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="custom.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="custom.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_old/custom.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
+                <state relative-caret-position="168">
+                  <caret line="153" column="11" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="7.mixins.parametric.multiple.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main/build/7.mixins.parametric.multiple.css">
+          <file leaf-file-name="8.mixins.parametric.match.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main/build/8.mixins.parametric.match.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-84">
-                  <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#207#376#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="476">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="9.mixins.parametric.function.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main/build/9.mixins.parametric.function.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -228,6 +157,9 @@
         <option value="$PROJECT_DIR$/main/src/6.mixins.parametric.default.less" />
         <option value="$PROJECT_DIR$/main/build/7.mixins.parametric.multiple.css" />
         <option value="$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less" />
+        <option value="$PROJECT_DIR$/main/build/8.mixins.parametric.match.css" />
+        <option value="$PROJECT_DIR$/main/src/8.mixins.parametric.match.less" />
+        <option value="$PROJECT_DIR$/main/src/9.mixins.parametric.function.less" />
       </list>
     </option>
   </component>
@@ -391,33 +323,42 @@
       <option name="presentableId" value="Default" />
       <updated>1471251648505</updated>
       <workItem from="1471251650857" duration="3861000" />
-      <workItem from="1471315027448" duration="7801000" />
+      <workItem from="1471315027448" duration="10354000" />
     </task>
+    <task id="LOCAL-00001" summary="more demo">
+      <created>1471324499280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1471324499280</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11662000" />
+    <option name="totallyTimeSpent" value="14215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="-8" width="1805" height="1096" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13865308" sideWeight="0.49585062" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19298245" sideWeight="0.49585062" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14091681" sideWeight="0.5041494" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22406639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22406639" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.32993776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="767" y="236" width="987" height="426" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1017" y="400" width="878" height="318" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="1017" y="400" width="878" height="318" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14035088" sideWeight="0.5041494" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32993776" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="1045" y="153" width="833" height="415" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14035088" sideWeight="0.5041494" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="717" y="221" width="1040" height="385" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="717" y="221" width="1040" height="385" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.4346473" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="590" y="149" width="1072" height="419" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.4346473" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="590" y="149" width="1072" height="419" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -432,22 +373,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="more demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="more demo" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/import-files/src/less-file-inline-2.less" />
-    <entry file="file://$PROJECT_DIR$/public/import-files/src/less-file-inline-1.less" />
-    <entry file="file://$PROJECT_DIR$/public/import-files/src/css-file-inline-1.css" />
     <entry file="file://$PROJECT_DIR$/public/import-files/src/css-file.css" />
     <entry file="file://$PROJECT_DIR$/public/import-files/src/css-file-once.css" />
     <entry file="file://$PROJECT_DIR$/public/import-files/src/css-file-inline.css" />
@@ -639,34 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/2.mixins.pseudo.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/src/3.mixins.namespace.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/4.mixins.important.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/0.mixins.simple.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -692,22 +602,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/5.mixins.parametric.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="e#22#347#0" expanded="false" />
-            <element signature="e#47#95#0" expanded="false" />
-            <element signature="e#117#165#0" expanded="false" />
-            <element signature="e#200#256#0" expanded="false" />
-            <element signature="e#214#252#0" expanded="false" />
-            <element signature="e#288#345#0" expanded="false" />
-            <element signature="e#303#341#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,44 +631,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_old/custom.less">
+    <entry file="file://$PROJECT_DIR$/main/build/7.mixins.parametric.multiple.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
+        <state relative-caret-position="560">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/build/7.mixins.parametric.multiple.css">
+    <entry file="file://$PROJECT_DIR$/main/src/5.mixins.parametric.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="84">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
-            <element signature="e#207#376#0" expanded="false" />
+            <element signature="e#22#347#0" expanded="false" />
+            <element signature="e#47#95#0" expanded="false" />
+            <element signature="e#117#165#0" expanded="false" />
+            <element signature="e#200#256#0" expanded="false" />
+            <element signature="e#214#252#0" expanded="false" />
+            <element signature="e#288#345#0" expanded="false" />
+            <element signature="e#303#341#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/0.mixins.simple.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/4.mixins.important.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/2.mixins.pseudo.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/src/7.mixins.parametric.multiple.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="560">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="e#240#264#0" expanded="false" />
-            <element signature="e#310#339#0" expanded="false" />
-            <element signature="e#401#429#0" expanded="false" />
-            <element signature="e#489#559#0" expanded="false" />
-            <element signature="e#646#747#0" expanded="false" />
-            <element signature="e#813#914#0" expanded="false" />
-            <element signature="e#1195#1226#0" expanded="false" />
-            <element signature="e#1251#1287#0" expanded="false" />
-            <element signature="e#1309#1354#0" expanded="false" />
-            <element signature="e#1373#1443#0" expanded="false" />
-            <element signature="e#1481#1543#0" expanded="false" />
-            <element signature="e#1578#1637#0" expanded="false" />
-            <element signature="e#1658#1715#0" expanded="false" />
-            <element signature="e#1735#1792#0" expanded="false" />
+            <element signature="e#237#261#0" expanded="false" />
+            <element signature="e#304#333#0" expanded="false" />
+            <element signature="e#393#421#0" expanded="false" />
+            <element signature="e#478#548#0" expanded="false" />
+            <element signature="e#632#733#0" expanded="false" />
+            <element signature="e#796#897#0" expanded="false" />
+            <element signature="e#962#1033#0" expanded="false" />
+            <element signature="e#1082#1150#0" expanded="false" />
+            <element signature="e#1175#1206#0" expanded="false" />
+            <element signature="e#1231#1267#0" expanded="false" />
+            <element signature="e#1289#1334#0" expanded="false" />
+            <element signature="e#1353#1423#0" expanded="false" />
+            <element signature="e#1461#1523#0" expanded="false" />
+            <element signature="e#1558#1617#0" expanded="false" />
+            <element signature="e#1638#1695#0" expanded="false" />
+            <element signature="e#1715#1772#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/build/8.mixins.parametric.match.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/8.mixins.parametric.match.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#328#351#0" expanded="false" />
+            <element signature="e#387#447#0" expanded="false" />
+            <element signature="e#518#571#0" expanded="false" />
+            <element signature="e#624#679#0" expanded="false" />
+            <element signature="e#733#787#0" expanded="false" />
+            <element signature="e#813#844#0" expanded="false" />
+            <element signature="e#871#907#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/build/9.mixins.parametric.function.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_old/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="153" column="11" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/9.mixins.parametric.function.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

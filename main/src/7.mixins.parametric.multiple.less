@@ -8,43 +8,43 @@
   (6) .mixin(@a; @rest...) 接受1至N个参数
 */
 #my-lab {
-  /* 直接引用 */
+  // 直接引用
   .yellow-color() {
     color: yellow;
   }
 
-  /* 无默认值，传递参数 */
+  // 无默认值，传递参数
   .set-background(@color) {
     background: @color;
   }
 
-  /*有默认值，传参覆盖 */
+  // 有默认值，传参覆盖
   .set-padding(@padding: 1px 2px 3px 4px;) {
     padding: @padding;
   }
 
-  /* 按照参数命名改变顺序传递参数 */
+  // 按照参数命名改变顺序传递参数
   .set-text(@align; @size; @color) {
     text-align: @align;
     font-size: @size;
     color: @color;
   }
 
-  /* 离散声明参数，离散传递，@arguments整体调用 */
+  // 离散声明参数，离散传递，@arguments整体调用
   .set-box-shadow-detached(@x; @y; @blur; @color) {
     -webkit-box-shadow: @arguments;
     -moz-box-shadow: @arguments;
     box-shadow: @arguments
   }
 
-  /* 整体声明参数，离散传递，@arguments整体调用 */
+  // 整体声明参数，离散传递，@arguments整体调用
   .set-box-shadow-total(...) {
     -webkit-box-shadow: @arguments;
     -moz-box-shadow: @arguments;
     box-shadow: @arguments
   }
 
-  /* @rest... 绑定剩余的参数 */
+  // @rest... 绑定剩余的参数
   .set-circle(@width; @height; @rest...) {
     width: @width;
     height: @height;

@@ -1,0 +1,21 @@
+#my-lab {
+  .define-block(@bc; @p; @m) {
+    @display: block;
+    @width: 500px;
+    @height: 500px;
+    @padding: @p;
+    @margin: @m;
+    @border-color: @bc;
+    @border-size: (@p + @m) / 10;
+  }
+}
+
+.mixins-set-block {
+  #my-lab > .define-block(#888; 10px; 20px);
+  display: @display;
+  width: @width;
+  height: @height;
+  padding: @padding;
+  margin: @margin;
+  border: @border-size solid @border-color;
+}

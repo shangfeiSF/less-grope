@@ -1,0 +1,49 @@
+// Mixins匹配模式：标志变量, 参数数量
+#my-lab {
+  // (1) 标志变量匹配
+  .turn-light-to(bright; @color) {
+    color: lighten(@color, 10%) // lighten是less提供的工具
+  }
+
+  .turn-light-to(dark; @color) {
+    color: darken(@color, 10%); // darken是less提供的工具
+  }
+
+  .turn-light-to(@_; @color) {
+    position: fixed;
+  }
+
+  // (2) 参数数量匹配
+  .set-color(@color) {
+    color: @color
+  }
+
+  .set-color(@color; @percentage) {
+    color: fade(@color, @percentage) // fade是less提供的工具
+  }
+}
+
+@color: #888;
+
+@action-first: bright;
+.mixins-light-after-action-1 {
+  #my-lab > .turn-light-to(@action-first; @color)
+}
+
+@action-second: dark;
+.mixins-light-after-action-2 {
+  #my-lab > .turn-light-to(@action-second; @color);
+}
+
+@action-third: unknow;
+.mixins-light-after-action-3 {
+  #my-lab > .turn-light-to(@action-third; @color);
+}
+
+.mixins-set-color-first {
+  #my-lab > .set-color(red)
+}
+
+.mixins-set-color-second {
+  #my-lab > .set-color(red; 50%)
+}

@@ -1,15 +1,17 @@
 // -------------------color-----------------------------
-.color-fn{
+.color-fn {
   // color argument must be a color keyword or 3/6 digit hex
   color: color("#afafaf");
   background-color: color("cyan");
 }
+
 // -------------------convert-----------------------------
-.convert-fn{
+.convert-fn {
   transform: scale(2) rotate(convert(180deg, "rad"));
 }
+
 // -------------------data-uri-----------------------------
-.data-uri-fn{
+.data-uri-fn {
   /*
     将一个资源内嵌到样式文件
     如果开启了ieCompat选项，而且资源文件的体积过大，或者是在浏览器中使用，则会使用url()进行回退
@@ -17,15 +19,16 @@
   */
   background-image: data-uri('../img/chrome.png');;
 }
+
 // -------------------default-----------------------------
-#default-space{
-  .mixin(@x) when (@x < 0){
+#default-space {
+  .mixin(@x) when (@x < 0) {
     position: relative;
   }
-  .mixin(@x) when (@x > 100){
+  .mixin(@x) when (@x > 100) {
     position: absolute;
   }
-  .mixin(@x) when not(default()){
+  .mixin(@x) when not(default()) {
     padding: 20px;
     margin: 40px;
     display: block;
@@ -36,20 +39,22 @@
     }
   */
 }
-.default-fn{
-  &-test-1{
+
+.default-fn {
+  &-test-1 {
     #default-space > .mixin(-10);
   }
-  &-test-2{
+  &-test-2 {
     #default-space > .mixin(110);
   }
-  &-test-3{
+  &-test-3 {
     #default-space > .mixin(50);
   }
 }
+
 // -------------------units-----------------------------
-#unit-sapce{
-  .mixin(@x) when (@x = 0){
+#unit-sapce {
+  .mixin(@x) when (@x = 0) {
     // 虽然 @x = 0 和 unit(@x) = 0 都能匹配 @x 是 0, 0px, 0%
     // 但是 unit() 要求参数 @x 必须是 number 类型的, test-5, test-6直接导致编译报错,容错性差
     // @x = 0 对 @x 的类型无要求，故test-5, test-6都可以编译通过，通过 default() 生成样式, 以编译后的通过css注释报错
@@ -64,46 +69,50 @@
     color: color("blue");
     top: unit(@x, px);
   }
-  .mixin(@x) when(default()){
+  .mixin(@x) when (default()) {
     /* error argument */
   }
 }
-.unit-fn{
-  &-test-1{
+
+.unit-fn {
+  &-test-1 {
     #unit-sapce > .mixin(0px);
   }
-  &-test-2{
+  &-test-2 {
     #unit-sapce > .mixin(1px);
   }
-  &-test-3{
+  &-test-3 {
     #unit-sapce > .mixin(10);
   }
-  &-test-4{
+  &-test-4 {
     #unit-sapce > .mixin(100%);
   }
-  &-test-5{
+  &-test-5 {
     #unit-sapce > .mixin("foo");
   }
-  &-test-6{
+  &-test-6 {
     #unit-sapce > .mixin(keyword);
   }
 }
+
 // -------------------escape-----------------------------
-.escape-fn{
+.escape-fn {
   //目前不太可靠
   @uri: escape('http://strip.taobaocdn.com/index?pid=123&refpid=456#test');
   background-image: url("@{uri}");
 }
+
 // -------------------e-----------------------------
-.e-fn{
+.e-fn {
   //  认为字符串是一个参数, 返回不带引号的原内容(常用于去除引号)
   // 可以用来输出一些Less并不认可的Css值，包括未验证的Css语法或者一个专有的语法
   //  e("") 可以用 ~"" 代替
   /*filter: e("ms:alwaysHasItsOwnSyntax.For.Stuff()");*/
   filter: ~"ms:alwaysHasItsOwnSyntax.For.Stuff()";
 }
+
 // -------------------%-----------------------------
-.percentage-fn{
+.percentage-fn {
   // d, D, a, A 能被任何类型参数替换 (颜色值, 数字, 转义值, 表达式, ...)
   // s, S 能被除了颜色值以为任何类型参数替换
   // 如果你在字符串中结合使用, 整个字符串参数都会替换进去, 包括它的引号
@@ -118,8 +127,9 @@
   data-AD: ~"@{AD}";
   data-S: ~"@{S}";
 }
+
 // -------------------replace-----------------------------
-.replace-fn{
+.replace-fn {
   @string-replace: replace("Hello Css!", "Css!", "Less~");
   @pattern-replace-1: replace("one[01] plus one[01] is two[02]", "\[\d+\]", "{Number}", "g");
   @pattern-replace-2: replace("This is a string.", "(string)\.$", "new $1!", "g");
@@ -129,8 +139,9 @@
   data-pattern-replace-2: @pattern-replace-2;
   data-remove-comma-and-replace: @remove-comma-and-replace;
 }
+
 // -------------------length-----------------------------
-.length-fn{
+.length-fn {
   @list: "peach", 1024, 100%, 10px;
   /* index 是从1开始的 */
   @index: 1;
@@ -140,8 +151,9 @@
   data-list-lentgh: @list-length;
   data-extract-index: @extract-index;
 }
+
 // -------------------math-----------------------------
-.math-fn{
+.math-fn {
   @test-ceil: ceil(2.4);
   @test-floor: floor(2.4);
   @test-percentage: percentage(0.423);
@@ -181,6 +193,7 @@
   data-min: @test-min;
   data-max: @test-max;
 }
+
 // -------------------type-----------------------------
 .type-fn {
   @test-is-number-1: isnumber(4096);

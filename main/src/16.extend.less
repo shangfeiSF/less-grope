@@ -1,0 +1,165 @@
+.main {
+  color: white;
+}
+
+// extend方式-1：用单个选择器.main的rules扩展单个选择器.nav-bar
+.nav-bar:extend(.main) {
+  background: yellow;
+}
+
+// extend方式-2：结合&，用单个选择器.main的rules扩展单个选择器.side-bar
+.side-bar {
+  &:extend(.main);
+  background: green;
+}
+
+// extend方式-3：结合&，用单个选择器.main的rules扩展多个选择器.left-content-bar, .right-content
+.left-content, .right-content {
+  &:extend(.main);
+  background: red;
+}
+
+// extend方式-4：用多个选择器.left-content, .side-bar的rules扩展单个选择器.comment
+.comment:extend(.left-content, .side-bar) {
+  width: 100px;
+  height: 100px;
+}
+
+// extend方式-5：用多个选择器.left-content, .side-bar的rules扩展多个选择器.left-pics, .right-pics
+.left-pics, .right-pics {
+  &:extend(.left-content, .side-bar) ;
+  overflow: hidden;
+}
+
+// extend需要在最后使用
+.hover {
+  color: cyan;
+}
+
+.title:hover:extend(.hover) {
+  text-align: center;
+}
+
+// 遇到less自身嵌套时
+.colors {
+  .red {
+    border: 1px solid red;
+  }
+  .yellow {
+    border: 1px solid yellow;
+  }
+}
+
+.image-visible:extend(.colors .red) {
+  overflow: visible;
+}
+
+.image-hidden:extend(.colors .yellow) {
+  overflow: hidden;
+}
+
+// 识别编译之后的css选择器
+.less-outer {
+  .less-inner & {
+    position: fixed;
+  }
+}
+
+.correct-layer:extend(.less-inner .less-outer) {
+  text-align: center;
+}
+
+.wrong-layer:extend(.less-outer .less-inner) {
+  text-align: center;
+}
+
+// extend最后指定all时, 实现先替换再扩展, 继承部分
+.contry.province.city,
+.city.street {
+  text-align: left;
+}
+
+.city {
+  &:hover {
+    display: block;
+  }
+}
+
+.town:extend(.city all) {
+  position: relative;
+}
+
+// 插值选择器(带变量的选择器)不会匹配
+@selector-1: selector-1;
+.@{selector-1} {
+  position: fixed;
+}
+
+.try-to-extend-selector-1:extend(.selector-1) {
+  text-align: center;
+}
+
+@selector-2: selector-2;
+.selector-2 {
+  position: absolute;
+}
+
+.try-to-extend-selector-2:extend(.@{selector-2}) {
+  text-align: left;
+}
+
+// 但是可以给插值选择器附加extend
+@selector-3: try-to-extend-selector-3;
+.selector-3 {
+  position: relative;
+}
+
+.@{selector-3}:extend(.selector-3) {
+  text-align: right;
+}
+
+// media中的extend扩展三原则：
+// 1.media内的extend只匹配其内部的同名选择器
+// 2.media内的extend不会匹配内部嵌套media内的同名选择器
+// 3.media外的extend匹配全部同名选择器
+@media screen and (max-width: 420px) {
+  // 自身的.pos
+  .pos {
+    position: absolute;
+  }
+
+  .extend-pos-in-media:extend(.pos) {
+    color: red;
+  }
+
+  @media (min-width: 1530px) {
+    // 自身嵌套的media的.pos
+    .pos {
+      position: relative;
+    }
+
+    .extend-pos-in-media-media:extend(.pos) {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  //平级media的.pos
+  .pos {
+    position: fixed;
+  }
+
+  .extend-pos-in-media:extend(.pos) {
+    color: green;
+  }
+}
+
+// 顶级的.pos
+.pos {
+  position: static;
+}
+
+.extend-pos-top:extend(.pos) {
+  color: yellow;
+}

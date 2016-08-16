@@ -6,12 +6,12 @@
 #red-id {
   background: red;
 }
-.mixins-yellow-class {
+.mixins-class {
   /* 从现有样式简单混合时，括号可以省略  */
   color: yellow;
   background: red;
 }
-.mixins-yellow-id {
+.mixins-id {
   /* 从现有样式简单混合时，括号可以省略  */
   color: yellow;
   background: red;

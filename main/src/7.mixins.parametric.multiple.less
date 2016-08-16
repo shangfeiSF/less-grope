@@ -1,0 +1,91 @@
+/*
+  带多个参数的mixins规则
+  (1) .mixin() 不接受参数
+  (2) .mixin(@a) 接受1个参数
+  (3) .mixin(@a: 1) 接受0或1个参数
+  (4) .mixin(...) 接受0至N个参数
+  (5) .mixin(@a: 1; @rest...) 接受0至N个参数
+  (6) .mixin(@a; @rest...) 接受1至N个参数
+*/
+#my-lab {
+  /* 直接引用 */
+  .yellow-color() {
+    color: yellow;
+  }
+
+  /* 无默认值，传递参数 */
+  .set-background(@color) {
+    background: @color;
+  }
+
+  /*有默认值，传参覆盖 */
+  .set-padding(@padding: 1px 2px 3px 4px;) {
+    padding: @padding;
+  }
+
+  /* 按照参数命名改变顺序传递参数 */
+  .set-text(@align; @size; @color) {
+    text-align: @align;
+    font-size: @size;
+    color: @color;
+  }
+
+  /* 离散声明参数，离散传递，@arguments整体调用 */
+  .set-box-shadow-detached(@x; @y; @blur; @color) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments
+  }
+
+  /* 整体声明参数，离散传递，@arguments整体调用 */
+  .set-box-shadow-total(...) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments
+  }
+
+  /* @rest... 绑定剩余的参数 */
+  .set-circle(@width; @height; @rest...) {
+    width: @width;
+    height: @height;
+    border-radius: @rest;
+  }
+
+  .set-block(@display: block; @width; @height) {
+    display: @display;
+    width: @width;
+    height: @height;
+  }
+}
+
+.mixins-yellow-color {
+  #my-lab > .yellow-color()
+}
+
+.mixins-set-background {
+  #my-lab > .set-background(red)
+}
+
+.mixins-set-padding {
+  #my-lab > .set-padding(4px 3px 2px 1px)
+}
+
+.mixins-set-text {
+  #my-lab > .set-text(@color: green; @align: center; @size: 20px;)
+}
+
+.mixins-set-set-box-shadow-detached {
+  #my-lab > .set-box-shadow-detached(1px; 2px; 3px; green)
+}
+
+.mixins-set-set-box-shadow-total {
+  #my-lab > .set-box-shadow-total(1px; 2px; 3px; green)
+}
+
+.mixins-set-circle {
+  #my-lab > .set-circle(100px; 100px; 50px 20px 50px)
+}
+
+.mixins-set-block {
+  #my-lab > .set-block(@width: 200px; @height: 200px)
+}

@@ -1,0 +1,34 @@
+/* 带参数的混合集 */
+#my-lab {
+  .color-class(@color) {
+    color: @color;
+    text-align: center;
+  }
+
+  #color-id(@color) {
+    color: @color;
+    text-align: center;
+  }
+
+  .background-class(@background) {
+    &:after {
+      background: @background;
+    }
+  }
+
+  #background-id(@background) {
+    &:before {
+      background: @background;
+    }
+  }
+}
+
+.mixins-class {
+  #my-lab > .color-class(yellow) !important;
+  #my-lab .background-class(red);
+}
+
+.mixins-id {
+  #my-lab > #color-id(yellow) !important;
+  #my-lab#background-id(red);
+}

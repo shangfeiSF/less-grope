@@ -1,8 +1,8 @@
-.mixins-yellow-class {
+.mixins-class {
   color: yellow;
   background: red;
 }
-.mixins-yellow-id {
+.mixins-id {
   color: yellow;
   background: red;
 }

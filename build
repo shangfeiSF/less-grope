@@ -24,6 +24,7 @@ if (options.all) {
         var basename = path.basename(name, '.less')
 
         return {
+          basename: basename,
           input: path.join('main/src', name),
           output: path.join('main/build', basename + '.css')
         }
@@ -36,7 +37,7 @@ if (options.all) {
         if (error) {
           console.error('exec error:' + error)
         } else {
-          console.log('Finish：' + command)
+          console.log('Finish：' + info.basename)
           stdout && console.log(stdout)
           stderr && console.error(stderr)
 

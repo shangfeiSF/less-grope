@@ -1,0 +1,67 @@
+#my-lab {
+  // 父元素层级
+  .parents-layer() {
+    .grandfather {
+      .father {
+        // &代表所有的父选择器，即.grandfather .father
+        & > & {
+          color: red;
+        }
+        & & {
+          color: yellow;
+        }
+        && {
+          color: green;
+        }
+        &, &-clothes {
+          color: white;
+        }
+      }
+    }
+  }
+
+  // 生成重复的类名
+  .generate-from-baseclass(@base) {
+    .@{base} {
+      color: white;
+
+      &-ok {
+        color: green
+      }
+      &-cancel {
+        color: yellow;
+      }
+      &-delete {
+        color: red;
+      }
+    }
+  }
+
+  // css兼容性问题
+  .block-style() {
+    .radius {
+      border: 1px solid red;
+      border-radius: 1px 2px 3px;
+      .no-support-css3 & {
+        border: 1px solid green;
+      }
+    }
+  }
+
+  // 生成逗号分割的selector列表的所有组合
+  .combination() {
+    .row, .col, div {
+      border-top: 2px solid white;
+      & & {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.merge-result {
+  #my-lab > .generate-from-baseclass(button);
+  #my-lab > .block-style();
+  #my-lab > .parents-layer();
+  #my-lab > .combination();
+}

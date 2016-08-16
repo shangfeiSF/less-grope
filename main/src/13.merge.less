@@ -1,0 +1,16 @@
+#my-lab {
+  .merge-with-comma(@color) {
+    box-shadow+: inset 0 0 10px @color;
+  }
+
+  .merge-with-space(@scale) {
+    transform+_: scale(@scale);
+  }
+}
+
+.merge-result {
+  #my-lab > .merge-with-comma(#888);
+  #my-lab > .merge-with-space(3);
+  box-shadow+: 0 0 20px black;
+  transform+_: rotate(15deg);
+}

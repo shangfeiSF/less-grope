@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="462012e7-6f4c-4e37-b85a-45d616a36cfd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/13.merge.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/14.parent.selectors.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/build/0.mixins.simple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/build/1.mixins.define.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/build/2.mixins.pseudo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/build/3.mixins.namespace.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/build/4.mixins.important.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/src/15.variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build" afterPath="$PROJECT_DIR$/build" />
     </list>
     <ignored path="less-grope.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,64 +23,96 @@
     <favorites_list name="less-grope" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="custom.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_old/custom.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-              <folding>
-                <element signature="e#54#459#0" expanded="false" />
-                <element signature="e#130#302#0" expanded="false" />
-                <element signature="e#473#578#0" expanded="false" />
-                <element signature="e#591#687#0" expanded="false" />
-                <element signature="e#700#850#0" expanded="false" />
-                <element signature="e#930#997#0" expanded="false" />
-                <element signature="e#1016#1080#0" expanded="false" />
-                <element signature="e#1162#1182#0" expanded="false" />
-                <element signature="e#1221#1273#0" expanded="false" />
-                <element signature="e#1321#1390#0" expanded="false" />
-                <element signature="e#1409#1438#0" expanded="false" />
-                <element signature="e#1477#1530#0" expanded="false" />
-                <element signature="e#1808#1848#0" expanded="false" />
-                <element signature="e#1867#1895#0" expanded="false" />
-                <element signature="e#2015#2115#0" expanded="false" />
-                <element signature="e#2134#2174#0" expanded="false" />
-                <element signature="e#2233#2267#0" expanded="false" />
-                <element signature="e#2289#2322#0" expanded="false" />
-                <element signature="e#2342#2363#0" expanded="false" />
-                <element signature="e#2390#2419#0" expanded="false" />
-                <element signature="e#2444#2473#0" expanded="false" />
-                <element signature="e#2507#2527#0" expanded="false" />
-                <element signature="e#2564#2603#0" expanded="false" />
-                <element signature="e#2618#2647#0" expanded="false" />
-                <element signature="e#2660#2694#0" expanded="false" />
-                <element signature="e#2748#2783#0" expanded="false" />
-                <element signature="e#2795#2873#0" expanded="false" />
-                <element signature="e#2904#2933#0" expanded="false" />
-                <element signature="e#2945#3026#0" expanded="false" />
-                <element signature="e#4167#4255#0" expanded="false" />
-                <element signature="e#5068#5264#0" expanded="false" />
-                <element signature="e#5124#5149#0" expanded="false" />
-                <element signature="e#5158#5185#0" expanded="false" />
-                <element signature="e#5193#5219#0" expanded="false" />
-                <element signature="e#5317#5381#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14.parent.selectors.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/build/14.parent.selectors.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47615707">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="15.variables.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main/src/15.variables.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#219#260#0" expanded="false" />
+                    <element signature="e#316#340#0" expanded="false" />
+                    <element signature="e#361#473#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="14.parent.selectors.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main/build/14.parent.selectors.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="39">
+                  <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_old/custom.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="348" column="20" selection-start-line="348" selection-start-column="20" selection-end-line="348" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#54#459#0" expanded="false" />
+                    <element signature="e#130#302#0" expanded="false" />
+                    <element signature="e#473#578#0" expanded="false" />
+                    <element signature="e#591#687#0" expanded="false" />
+                    <element signature="e#700#850#0" expanded="false" />
+                    <element signature="e#930#997#0" expanded="false" />
+                    <element signature="e#1016#1080#0" expanded="false" />
+                    <element signature="e#1162#1182#0" expanded="false" />
+                    <element signature="e#1221#1273#0" expanded="false" />
+                    <element signature="e#1321#1390#0" expanded="false" />
+                    <element signature="e#1409#1438#0" expanded="false" />
+                    <element signature="e#1477#1530#0" expanded="false" />
+                    <element signature="e#1808#1848#0" expanded="false" />
+                    <element signature="e#1867#1895#0" expanded="false" />
+                    <element signature="e#2015#2115#0" expanded="false" />
+                    <element signature="e#2134#2174#0" expanded="false" />
+                    <element signature="e#2233#2267#0" expanded="false" />
+                    <element signature="e#2289#2322#0" expanded="false" />
+                    <element signature="e#2342#2363#0" expanded="false" />
+                    <element signature="e#2390#2419#0" expanded="false" />
+                    <element signature="e#2444#2473#0" expanded="false" />
+                    <element signature="e#2507#2527#0" expanded="false" />
+                    <element signature="e#2564#2603#0" expanded="false" />
+                    <element signature="e#2618#2647#0" expanded="false" />
+                    <element signature="e#2660#2694#0" expanded="false" />
+                    <element signature="e#2748#2783#0" expanded="false" />
+                    <element signature="e#2795#2873#0" expanded="false" />
+                    <element signature="e#2904#2933#0" expanded="false" />
+                    <element signature="e#2945#3026#0" expanded="false" />
+                    <element signature="e#4167#4255#0" expanded="false" />
+                    <element signature="e#5068#5264#0" expanded="false" />
+                    <element signature="e#5124#5149#0" expanded="false" />
+                    <element signature="e#5158#5185#0" expanded="false" />
+                    <element signature="e#5193#5219#0" expanded="false" />
+                    <element signature="e#5317#5381#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="15.variables.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main/build/15.variables.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,6 +164,8 @@
         <option value="$PROJECT_DIR$/main/src/13.merge.less" />
         <option value="$PROJECT_DIR$/main/src/14.parent.selectors.less" />
         <option value="$PROJECT_DIR$/main/build/14.parent.selectors.css" />
+        <option value="$PROJECT_DIR$/main/src/15.variables.less" />
+        <option value="$PROJECT_DIR$/main/build/15.variables.css" />
       </list>
     </option>
   </component>
@@ -288,7 +315,7 @@
       <option name="presentableId" value="Default" />
       <updated>1471251648505</updated>
       <workItem from="1471251650857" duration="3861000" />
-      <workItem from="1471315027448" duration="15980000" />
+      <workItem from="1471315027448" duration="16893000" />
     </task>
     <task id="LOCAL-00001" summary="more demo">
       <created>1471324499280</created>
@@ -318,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471331067136</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="more demo">
+      <created>1471332757546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471332757546</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19841000" />
+    <option name="totallyTimeSpent" value="20754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="-8" width="1805" height="1096" extended-state="0" />
@@ -368,15 +402,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/import-files/src/less-file-once.less" />
-    <entry file="file://$PROJECT_DIR$/src/0.mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -784,10 +809,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/14.parent.selectors.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#339#0" expanded="false" />
+            <element signature="e#388#570#0" expanded="false" />
+            <element signature="e#403#566#0" expanded="false" />
+            <element signature="e#437#467#0" expanded="false" />
+            <element signature="e#483#515#0" expanded="false" />
+            <element signature="e#531#560#0" expanded="false" />
+            <element signature="e#603#759#0" expanded="false" />
+            <element signature="e#806#917#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/13.merge.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/build/14.parent.selectors.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_old/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        <state relative-caret-position="224">
+          <caret line="348" column="20" selection-start-line="348" selection-start-column="20" selection-end-line="348" selection-end-column="20" />
           <folding>
             <element signature="e#54#459#0" expanded="false" />
             <element signature="e#130#302#0" expanded="false" />
@@ -828,36 +886,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/14.parent.selectors.less">
+    <entry file="file://$PROJECT_DIR$/main/build/15.variables.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/src/15.variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
-            <element signature="e#40#339#0" expanded="false" />
-            <element signature="e#388#570#0" expanded="false" />
-            <element signature="e#403#566#0" expanded="false" />
-            <element signature="e#437#467#0" expanded="false" />
-            <element signature="e#483#515#0" expanded="false" />
-            <element signature="e#531#560#0" expanded="false" />
-            <element signature="e#603#759#0" expanded="false" />
-            <element signature="e#806#917#0" expanded="false" />
+            <element signature="e#219#260#0" expanded="false" />
+            <element signature="e#316#340#0" expanded="false" />
+            <element signature="e#361#473#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/13.merge.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/build/14.parent.selectors.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>

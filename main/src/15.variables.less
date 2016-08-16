@@ -1,0 +1,40 @@
+@selector: banner;
+
+@property: color;
+@key: "value";
+@value: white;
+
+@imgDir: "../img";
+
+// @{} 是变量插值的用法
+.@{selector} {
+  @{property}: @@key;
+  background: url("@{imgDir}/unknow.png");
+}
+
+// 变量是延迟加载的，在使用前不一定要预先声明
+.lazy {
+  width: @width;
+  @percentage: 100%;
+}
+
+@width: @percentage;
+@percentage: 1%;
+
+@var: 0px;
+div {
+border-radius: @var;
+}
+@var : 1px;
+
+.first {
+  @var: 2px;
+
+  .second {
+    @var: 3px;
+    border-radius: @var;
+    @var: 4px;
+  }
+
+  border-radius: @var;
+}

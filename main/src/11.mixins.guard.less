@@ -1,0 +1,77 @@
+// 关键字true是等价的唯一真值
+#my-lab {
+  .color-style() when (@selected = true) {
+    color: yellow;
+  }
+
+  .large-block-style(@width, @height) when (@width > 10), (@height > 10) {
+    width: @width;
+    height: @height;
+  }
+
+  .small-block-style(@width, @height) when (@width < 10) and (@height < 10) {
+    width: @width;
+    height: @height;
+  }
+
+  .max(@first; @second) when (@first > @second) {
+    width: @first;
+    height: 100px;
+  }
+
+  .min(@first; @second) when (@first > @second) {
+    width: @second;
+    height: 100px;
+  }
+}
+
+.mixins-color-style {
+  @selected: true;
+  #my-lab > .color-style();
+}
+
+.mixins-large-block-style {
+  position: relative;
+  @width: 20px;
+  @height: 20px;
+  #my-lab > .large-block-style(@width, @height)
+}
+
+.mixins-small-block-style {
+  position: relative;
+  @width: 20px;
+  @height: 20px;
+  #my-lab > .small-block-style(@width, @height)
+}
+
+.mixins-max {
+  @first: 20px;
+  @second: 10px;
+  #my-lab > .max(@first, @second)
+}
+
+.mixins-min {
+  @first: 20px;
+  @second: 10px;
+  #my-lab > .min(@first, @second)
+}
+
+// 更加便捷的写法：用&实现'if'类型的语句
+@my-option: 100;
+& when (@my-option > 99) {
+  button {
+    color: white;
+  }
+  a {
+    color: green;
+  }
+}
+
+& when (@my-option <= 99) {
+  button {
+    color: yellow;
+  }
+  a {
+    color: red;
+  }
+}

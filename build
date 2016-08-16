@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+var fs = require('fs')
+var path = require('path')
+var cp = require('child_process')
+
+var nopt = require('nopt')
+var Promise = require('bluebird')
+
+Promise.promisifyAll(fs)
+
+var options = nopt({
+  'input': Array,
+  'all': Boolean
+}, {
+  'i': ['--input'],
+  'a': ['--all', 'true']
+}, process.argv, 2)
+
+if (options.all) {
+  fs.readdirAsync(path.join(process.cwd(), 'main', 'src'))
+    .then(function (names) {
+      return names.map(function (name) {
+        var basename = path.basename(name, '.less')
+
+        return {
+          input: path.join('main/src', name),
+          output: path.join('main/build', basename + '.css')
+        }
+      })
+    })
+    .map(function (info) {
+      var command = ['lessc'].concat([info.input, info.output]).join(' ')
+
+      cp.exec(command, {cwd: path.join(process.cwd())}, function (error, stdout, stderr) {
+        if (error) {
+          console.error('exec error:' + error)
+        } else {
+          console.log('Finish：' + command)
+          stdout && console.log(stdout)
+          stderr && console.error(stderr)
+
+        }
+      })
+    })
+}
+else {
+  if (options.input.length) {
+    for (var i = 0; i < options.input.length; i++) {
+      var command = ['lessc']
+      var file = options.input[i]
+      var basename = path.basename(file, '.less')
+
+      command = command.concat([file, path.join('main/build', basename + '.css')])
+      command = command.join(' ')
+
+      console.log(command)
+
+      cp.exec(command, {cwd: path.join(process.cwd())}, function (error, stdout, stderr) {
+        if (error) {
+          console.error('exec error:' + error)
+        } else {
+          console.log(stdout)
+          console.error(stderr)
+        }
+      })
+    }
+  }
+  else {
+    console.error('need input less file')
+  }
+}
+
+
+
+

@@ -1,0 +1,45 @@
+// test-if-mixin-make-display-compile 会出现在merge.css
+.test-if-mixin-make-display-compiled:extend(.mixin-make-display) {
+}
+
+// test-if-use-make-position-compile 会出现在merge.css
+.test-if-use-make-position-compiled:extend(.use-make-position) {
+}
+
+//use-make-position-again 会出现在merge.css
+.use-make-position-again {
+  .make-position(relative);
+}
+
+// 还是可以找到 make-border 和 make-float, 虽然在之后才import
+.use-make-border-again {
+  .make-border(2px solid #bb1100)
+}
+
+.mixin-make-float {
+  .make-float();
+  font-size: 1em
+}
+
+// extend-use-make-position-again 会出现在merge.css
+.extend-use-make-position-again:extend(.use-make-position) {
+}
+
+.test-sequence {
+  text-align: center;
+}
+
+// mixin-make-display-again 会出现在merge.css
+.mixin-make-display-again {
+  .make-display();
+  margin: 10px;
+}
+
+.mixin-make-float-again {
+  .make-float();
+  font-style: normal;
+}
+
+// 拉取 less-file-reference-1 中全部带有town的样式
+.town:extend(.town all) {
+}

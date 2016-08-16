@@ -1,0 +1,15 @@
+/* 调用混合集时追加!important，混合集所有属性继承!important */
+.mixins-yellow-class {
+  color: yellow !important;
+  text-align: center !important;
+}
+.mixins-yellow-class:after {
+  background: red;
+}
+.mixins-yellow-id {
+  color: yellow !important;
+  text-align: center !important;
+}
+.mixins-yellow-id:before {
+  background: red;
+}

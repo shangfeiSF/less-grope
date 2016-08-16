@@ -1,0 +1,25 @@
+.yellow-class() {
+  color: yellow
+}
+
+#yellow-id() {
+  color: yellow
+}
+
+.red-class() {
+  background: red;
+}
+
+#red-id() {
+  background: red;
+}
+
+.mixins-yellow-class {
+  .yellow-class;
+  .red-class();
+}
+
+.mixins-yellow-id {
+  #yellow-id;
+  #red-id();
+}

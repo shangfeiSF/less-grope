@@ -1,0 +1,12 @@
+.mixins-yellow-class:hover {
+  color: yellow;
+}
+.mixins-yellow-class:after {
+  background: red;
+}
+.mixins-yellow-id:first-child {
+  color: yellow;
+}
+.mixins-yellow-id:before {
+  background: red;
+}

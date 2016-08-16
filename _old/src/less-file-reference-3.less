@@ -1,0 +1,22 @@
+.make-border(@border) {
+  border: @border;
+}
+
+.make-float {
+  float: right;
+}
+
+.use-make-border {
+  .make-border(1px solid #e5e5e5);
+}
+
+.mixin-make-float {
+  .make-float();
+  font-size: 12px;
+}
+
+.extend-use-make-border:extend(.use-make-border) {
+}
+
+.extend-use-make-position-treble:extend(.use-make-position) {
+}

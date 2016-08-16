@@ -1,0 +1,33 @@
+.yellow-class-hover() {
+  &:hover {
+    color: yellow
+  }
+}
+
+#yellow-id-first-child() {
+  &:first-child {
+    color: yellow
+  }
+}
+
+.red-class-after() {
+  &:after {
+    background: red;
+  }
+}
+
+#red-id-before() {
+  &:before {
+    background: red;
+  }
+}
+
+.mixins-yellow-class {
+  .yellow-class-hover;
+  .red-class-after();
+}
+
+.mixins-yellow-id {
+  #yellow-id-first-child;
+  #red-id-before();
+}

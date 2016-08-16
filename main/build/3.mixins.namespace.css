@@ -1,0 +1,13 @@
+/* 混合集用命名空间管理，避免库冲突 */
+.mixins-yellow-class {
+  color: yellow;
+}
+.mixins-yellow-class:after {
+  background: red;
+}
+.mixins-yellow-id {
+  color: yellow;
+}
+.mixins-yellow-id:before {
+  background: red;
+}

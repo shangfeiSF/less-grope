@@ -1,0 +1,106 @@
+.make-position(@position) {
+  position: @position;
+}
+
+//make-display 不会出现在merge.css
+.make-display {
+  display: block;
+}
+
+//use-make-position 不会出现在merge.css
+.use-make-position {
+  .make-position(absolute);
+}
+
+//mixin-make-display 不会出现在merge.css
+.mixin-make-display {
+  .make-display();
+  padding: 5px;
+}
+
+// 出现的样式是按照
+/*
+  less-file-reference-1 中会输出的extend样式
+  less-file-reference-2 中会输出的extend样式
+  less-file-reference-2 中会输出的显式和隐式样式
+*/
+
+//extend-use-make-position 会出现在merge.css
+.extend-use-make-position:extend(.use-make-position) {
+}
+
+.make-vertical-align {
+  vertical-align: middle;
+}
+
+// 即便是less-file-reference-1设置了import (reference)
+//test-if-extend-can-ouput也会出现在merge.css
+.test-if-extend-can-ouput:extend(.make-vertical-align) {
+}
+
+// 带有town的样式（拉取全部town样式）
+.town,
+.town .tree,
+.town .lawn {
+  &:hover {
+    .make-position(fixed);
+    color: #35FBFF;
+  }
+  .make-display();
+  color: #00A000;
+}
+
+.town .lights {
+  &:hover {
+    color: #ff3300;
+  }
+}
+
+.town div,
+.town span {
+  float: left;
+}
+
+//不带town的样式（拉取全部town样式）
+.street .block {
+  border: 1px solid #0b97c4;
+}
+
+.town img:extend(.street .block) {
+}
+
+// 应用了extend（拉取全部town样式）
+/* 将出现(.street .block 替换成 .town img)
+    .town img,
+    .town img {
+      border: 1px solid #0b97c4;
+    }
+*/
+.street .block,
+.town .test-1,
+.foo div {
+  margin: 20px;
+  padding: 30px;
+}
+
+/*
+    .town img,
+    .town .test-1,
+    .town img {
+      margin: 20px;
+      padding: 30px;
+    }
+*/
+.doo .street,
+.town .test-2,
+.block div {
+  top: 20px;
+  left: 30px;
+}
+
+/*
+    .town .test-2 {
+      top: 20px;
+      left: 30px;
+    }
+*/

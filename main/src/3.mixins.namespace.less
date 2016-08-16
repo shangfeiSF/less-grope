@@ -1,0 +1,32 @@
+/* 混合集用命名空间管理，避免库冲突 */
+#my-lab {
+  .yellow-class() {
+    color: yellow
+  }
+
+  #yellow-id() {
+    color: yellow
+  }
+
+  .red-class() {
+    &:after {
+      background: red;
+    }
+  }
+
+  #red-id() {
+    &:before {
+      background: red;
+    }
+  }
+}
+
+.mixins-yellow-class {
+  #my-lab > .yellow-class;
+  #my-lab .red-class();
+}
+
+.mixins-yellow-id {
+  #my-lab > #yellow-id;
+  #my-lab#red-id();
+}

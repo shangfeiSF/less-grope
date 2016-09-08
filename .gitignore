@@ -1,3 +1,4 @@
 .idea/
-main/build
 node_modules/
+npm-debug.log
+main/build

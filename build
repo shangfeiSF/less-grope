@@ -40,7 +40,6 @@ if (options.all) {
           console.log('Finish：' + info.basename)
           stdout && console.log(stdout)
           stderr && console.error(stderr)
-
         }
       })
     })
@@ -71,7 +70,3 @@ else {
     console.error('need input less file')
   }
 }
-
-
-
-
